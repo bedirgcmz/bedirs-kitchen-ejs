@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bedir's Kitchen</title>
+    <link rel="stylesheet" href="styles/global.css" />
+  </head>
+  <body>
+    <%- include("../partials/header") %>
+
+    <section class="home-welcome">
+      <h1><%= pageTitle %></h1>
+      <p>
+        Welcome to Bedir's Kitchen! We're thrilled to have you here. At Bedir's Kitchen, we're all
+        about exploring the boundaries of flavor, creating culinary wonders, and sharing the joy of
+        cooking with you. Whether you're a seasoned chef or just starting out in the kitchen,
+        Bedir's Kitchen is your go-to destination for delicious recipes, handy cooking tips, and
+        culinary inspiration that'll take your dishes to the next level. Get ready to embark on a
+        culinary adventure with us. From mouthwatering meals to delightful desserts, we've got
+        everything you need to satisfy your cravings and elevate your cooking game. Bon appétit and
+        happy cooking! The Bedir's Kitchen Team 🌟
+      </p>
+    </section>
+    <section class="home-branches">
+      <h1>Our Branches</h1>
+      <div>
+        <div class="branch">
+          <h3>Stockholm</h3>
+          <img src="images/stockholm.webp" alt="Stockholm" />
+          <a class="view-link" href="http://localhost:3002/">View</a>
+        </div>
+        <div class="branch">
+          <h3>Goteborg</h3>
+          <img src="images/goteborg.jpg" alt="Goteborg" />
+          <a class="view-link" href="http://localhost:3002/">View</a>
+        </div>
+        <div class="branch">
+          <h3>Sundsvall</h3>
+          <img src="images/sundsvall.jpeg" alt="Sundsvall" />
+          <a class="view-link" href="http://localhost:3002/">View</a>
+        </div>
+      </div>
+    </section>
+
+    <%- include("../partials/footer") %>
+  </body>
+</html>
