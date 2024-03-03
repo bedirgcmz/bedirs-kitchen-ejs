@@ -25,7 +25,7 @@ body {
 }
 
 header {
-  height: 300px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -162,8 +162,9 @@ footer {
 }
 .main-content {
   width: 80%;
-  min-height: 50vh;
+  min-height: 45vh;
   padding: 12px;
+  padding-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -184,9 +185,10 @@ footer {
 .sidebar {
   width: 20%;
   min-width: 160px;
-  min-height: 50vh;
+  min-height: 45vh;
   padding: 12px;
   background-color: #7ca3bd;
+  border-radius: 6px;
   ul {
     list-style-type: none;
     li {
@@ -200,6 +202,35 @@ footer {
   }
 }
 
+.view-detail,
+.view-all-recipe {
+  padding: 6px 12px;
+  width: 185px;
+  border: 1px solid #233c4d;
+  color: #fff;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-weight: 600;
+  background-color: #7ca3bd;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.view-all-recipe {
+  width: 285px;
+  text-align: center;
+  color: #fff;
+}
+
+.view-detail:hover {
+  opacity: 0.8;
+}
+.view-all-recipe:hover {
+  background-color: #fff;
+  color: #7ca3bd;
+}
+
 /* Dessert Page Css */
 .desserts-container,
 .drinks-container,
@@ -207,8 +238,84 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  width: 95%;
+  margin: auto;
 }
-.produce-item.active {
+.product-item.active {
   border-bottom: 2px solid #fff;
   color: #fff;
+}
+
+/* Subpages css */
+.product-in-subpage {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+section.go-back {
+  margin-top: 12px;
+  text-align: center;
+  margin-bottom: -48px;
+  position: relative;
+  z-index: 666;
+}
+button.go-back {
+  padding: 8px 44px;
+  border: 1px solid #233c4d;
+  background-color: #7ca3bd;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+button.go-back:hover {
+  color: #7ca3bd;
+  background-color: #fff;
+}
+.subpages-title {
+  padding: 20px;
+  text-align: center;
+}
+
+.recipes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  div {
+    margin-bottom: 30px;
+    width: 90%;
+    text-align: center;
+  }
+  h3 {
+    margin-bottom: 12px;
+  }
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
+.go-back.recipe {
+  margin-bottom: 12px;
+  position: static;
+}
+@media only screen and (min-width: 780px) {
+  .recipes {
+    iframe {
+      width: 700px;
+      height: 400px;
+    }
+    div {
+      margin-bottom: 44px;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .recipes {
+    iframe {
+      width: 300px;
+      height: 169px;
+    }
+  }
 }

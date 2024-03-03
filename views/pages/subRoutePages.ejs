@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bedir's Kitchen</title>
+    <link rel="stylesheet" href="styles/global.css" />
+  </head>
+  <body>
+    <%- include("../partials/header") %>
+
+    <h1 class="subpages-title"><%= pageTitle %></h1>
+    <main>
+      <section class="go-back">
+        <button class="go-back" onclick="history.back()">Go Back</button>
+      </section>
+      <section>
+        <div class="img-infos">
+          <img class="product-in-subpage" src="<%= productImage %>" alt="" />
+          <div class="infos">
+            <p><b>Meal Name</b> : <%= productName %></p>
+            <p><b>Info</b> : <%= productInfo %></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include("../partials/footer") %>
+  </body>
+</html>

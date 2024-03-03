@@ -1,4 +1,6 @@
 import express from "express";
+import subDrinksRouter from "./subDrinks.js";
+import recipeDrinksRouter from "./recipeDrinks.js";
 
 const drinksRouter = express.Router();
 
@@ -9,5 +11,9 @@ drinksRouter.get("/", (req, res) => {
     className: "drinks",
   });
 });
+
+drinksRouter.use("/drink-product", subDrinksRouter);
+drinksRouter.use("/recipe", recipeDrinksRouter);
+drinksRouter.use(express.static("public"));
 
 export default drinksRouter;
