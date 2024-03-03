@@ -1,7 +1,15 @@
 import { dessertsList, mealsList, drinksList, allProductList } from "./data.js";
+/* Home Page Js */
+const viewLinkEl = document.querySelectorAll(".branch .view-link");
+console.log(viewLinkEl);
+
+viewLinkEl.forEach((el) => {
+  el.addEventListener("click", () => {
+    alert("This feature is under construction..");
+  });
+});
 
 const pathName = window.location.pathname;
-console.log(pathName);
 
 let pageName;
 if (pathName == "/desserts") {

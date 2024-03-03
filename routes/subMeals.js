@@ -13,7 +13,7 @@ subMealsRouter.get("/", (req, res) => {
   const targetproduct = allProductList.find((item) => item.id == productId);
 
   res.render("pages/subRoutePages", {
-    pageTitle: `${targetproduct.name} dish and recipe`,
+    pageTitle: `What is ${targetproduct.name}?`,
     productImage: `images/${targetproduct.image}`,
     productName: targetproduct.name,
     productInfo: targetproduct.info,

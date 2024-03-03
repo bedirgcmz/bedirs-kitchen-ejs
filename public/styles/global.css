@@ -52,9 +52,11 @@ header {
   -o-background-size: cover;
   background-size: cover;
 }
+
 nav {
   background-color: #49667a;
 }
+
 .nav-link {
   padding: 6px 12px;
   border: 1px solid #fff;
@@ -65,12 +67,14 @@ nav {
     color: #fff;
   }
 }
+
 .nav-link:hover {
   background-color: #fff;
   a {
     color: #252525;
   }
 }
+
 footer {
   margin-top: auto;
   text-align: center;
@@ -79,6 +83,7 @@ footer {
   line-height: 60px;
   color: #fff;
 }
+
 .home-welcome {
   margin: 20px 0;
   h1 {
@@ -90,12 +95,15 @@ footer {
     text-align: justify;
   }
 }
+
 .home-branches > div {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 100%;
 }
+
 .home-branches {
   display: flex;
   flex-direction: column;
@@ -128,6 +136,7 @@ footer {
     }
   }
 }
+
 .view-link {
   padding: 4px 24px;
   border: 1px solid #49667a;
@@ -138,6 +147,7 @@ footer {
   margin-top: -13px;
   color: #49667a;
 }
+
 .view-link {
   --c: #49667a; /* the color */
   color: #0000;
@@ -149,17 +159,19 @@ footer {
   transition: 0.5s;
   background-color: #edeff0;
 }
+
 .view-link:hover {
   --_p: 100%;
 }
 
 /* Routes Common Csss */
-.page-titel {
+.page-title {
   text-align: center;
   padding: 12px;
   margin: 10px 0;
   font-size: 2.4rem;
 }
+
 .main-content {
   width: 80%;
   min-height: 45vh;
@@ -177,14 +189,16 @@ footer {
     max-width: 600px;
   }
 }
+
 .img-infos {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 2rem 16px;
   text-align: center;
 }
+
 .sidebar {
   width: 20%;
-  min-width: 160px;
+  min-width: 115px;
   min-height: 45vh;
   padding: 12px;
   background-color: #7ca3bd;
@@ -226,6 +240,7 @@ footer {
 .view-detail:hover {
   opacity: 0.8;
 }
+
 .view-all-recipe:hover {
   background-color: #fff;
   color: #7ca3bd;
@@ -240,6 +255,7 @@ footer {
   align-items: start;
   width: 95%;
   margin: auto;
+  margin-bottom: 20px;
 }
 .product-item.active {
   border-bottom: 2px solid #fff;
@@ -310,6 +326,9 @@ button.go-back:hover {
       margin-bottom: 44px;
     }
   }
+  .home-branches > div {
+    flex-direction: row;
+  }
 }
 @media only screen and (max-width: 600px) {
   .recipes {
@@ -317,5 +336,18 @@ button.go-back:hover {
       width: 300px;
       height: 169px;
     }
+  }
+  .page-title,
+  .subpages-title {
+    font-size: 1.2rem;
+  }
+  .main-content {
+    width: 65%;
+  }
+  .main-content img {
+    width: 200px;
+  }
+  .view-all-recipe {
+    width: 234px;
   }
 }
