@@ -102,20 +102,20 @@ function getDessert(event) {
 
 const createViewDetailLink = (pProduct) => {
   if (pProduct.group == "desserts") {
-    return `<a href="http://localhost:3002/desserts/dessert-product?productId=${pProduct.id}" class="view-detail"> View Detail </a>`;
+    return `<a href="/desserts/dessert-product?productId=${pProduct.id}" class="view-detail"> View Detail </a>`;
   } else if (pProduct.group == "drinks") {
-    return `<a href="http://localhost:3002/drinks/drink-product?productId=${pProduct.id}" class="view-detail"> View Detail </a>`;
+    return `<a href="/drinks/drink-product?productId=${pProduct.id}" class="view-detail"> View Detail </a>`;
   } else if (pProduct.group == "meals") {
-    return `<a href="http://localhost:3002/meals/meal-product?productId=${pProduct.id}" class="view-detail"> View Detail </a>`;
+    return `<a href="/meals/meal-product?productId=${pProduct.id}" class="view-detail"> View Detail </a>`;
   }
 };
 
 const createRecipeslLink = (pProduct) => {
   if (pProduct.group == "desserts") {
-    return `<a href="http://localhost:3002/desserts/recipe?group=${pProduct.group}" class="view-all-recipe"> View All Recipes </a>`;
+    return `<a href="/desserts/recipe?group=${pProduct.group}" class="view-all-recipe"> View All Recipes </a>`;
   } else if (pProduct.group == "drinks") {
-    return `<a href="http://localhost:3002/drinks/recipe?group=${pProduct.group}" class="view-all-recipe"> View All Recipes  </a>`;
+    return `<a href="/drinks/recipe?group=${pProduct.group}" class="view-all-recipe"> View All Recipes  </a>`;
   } else if (pProduct.group == "meals") {
-    return `<a href="http://localhost:3002/meals/recipe?group=${pProduct.group}" class="view-all-recipe"> View All Recipes  </a>`;
+    return `<a href="/meals/recipe?group=${pProduct.group}" class="view-all-recipe"> View All Recipes  </a>`;
   }
 };
